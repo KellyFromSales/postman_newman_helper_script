@@ -1,0 +1,10 @@
+
+*.env
+
+*.txt
+
+newman/
+
+test-environment.json
+
+test-collection.json
