@@ -42,14 +42,19 @@ fi
 
 arg=$1
 
-if [ "$arg" == 'local' ]
+if [ "$arg" == 'live' ]
 then
-    envid=$local_envid
+    envid=$live_envid
 fi
 
-if [ "$arg" == 'remote' ]
+if [ "$arg" == 'staging' ]
 then
-    envid=$remote_envid
+    envid=$staging_envid
+fi
+
+if [ "$arg" == 'testing' ]
+then
+    envid=$testing_envid
 fi
 
 echo "Running $arg environment..."
